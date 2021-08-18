@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/plus_vendedores"
+        android:showAsAction="always"
+		android:icon="@drawable/bt_abrir_action">
+			
+			<menu>
+			    <item 
+			        android:id="@+id/so_agua"
+			        android:title="SÓ ÁGUA"
+					android:icon="@drawable/bottle_agua"/>
+			    
+			    <item 
+			        android:id="@+id/so_gas"
+			        android:title="SÓ GÁS"
+					android:icon="@drawable/gas_fire" />
+			</menu>	
+		
+	
+	</item>  
+   
+</menu>

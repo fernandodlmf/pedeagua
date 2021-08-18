@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <RelativeLayout	 
+	 android:layout_width="match_parent"
+	 android:layout_height="wrap_content"
+	 android:background="#FFFFFF"
+	 android:fontFamily="open-sans">
+	 
+    <RelativeLayout
+        android:id="@+id/layoutHrConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gota" />
+
+       
+
+        <TextView
+            android:id="@+id/tvQtdGlobal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="open-sans"
+            android:text="CADASTRO"
+            android:textColor="#666666"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFecharCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:onClick="tvFechar"
+            android:text="@string/fechar"
+            android:textColor="#000000"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+        
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="0dp"
+             android:layout_below="@+id/layoutHrConfirmar"   >
+		    
+             	<View 
+				   android:layout_width="match_parent"
+				   android:layout_height="2dp"
+				    
+				   android:background="#A9A9A9"/>
+             
+             
+         </LinearLayout>
+         
+         
+ 
+   
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_below="@+id/layoutHrConfirmar" >
+	    
+	    
+	    	<EditText
+	            android:id="@+id/etNomeC"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:inputType="textPersonName"
+	            android:hint="NOME" />
+	    	
+	    	<EditText
+	            android:id="@+id/etEmailC"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:inputType="textEmailAddress"
+	            android:hint="EMAIL" />
+	    	
+	    	<com.pedeagua.mascaras.CelularEditText
+	            android:id="@+id/etTelefoneC"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:inputType="phone"
+	            android:hint="TELEFONE" />
+	
+	        <EditText
+	            android:id="@+id/etCriarSenhaC"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:inputType="textPassword"
+	            android:layout_marginTop="15dp"
+	            android:hint="SENHA" />
+	        
+	
+			<EditText
+				android:id="@+id/etConfirmarSenhaC"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"
+				android:layout_marginTop="15dp"
+				android:hint="CONFIRMAR SENHA" />
+			
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal" >
+	
+			<RadioButton
+			    android:id="@+id/rBATermos_1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="15dp"
+			    android:textStyle="bold"
+			    android:textSize="8pt"
+	            android:textColor="#666666"
+			    android:text="@string/li_termos" />
+		
+		</LinearLayout>		
+		        
+	     <LinearLayout
+	        android:id="@+id/layout_Termos"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginTop="15dp" >
+	
+	        <Button
+	            android:id="@+id/btConfirmar_Termos"
+	            android:layout_width="match_parent"
+	            android:layout_height="55dp"
+	            android:background="@drawable/btn_cadastrar"
+	            android:clickable="true"
+	            android:text="@string/cadastrar"
+	            android:fontFamily="open-sans"
+	            android:textColor="#FFFFFF"
+	            android:textSize="10pt"
+	            android:textStyle="bold" />
+	
+	     </LinearLayout>
+	    
+	 
+	</LinearLayout>
+
+</RelativeLayout>
+	
+        
+        
+    </LinearLayout>
+
+</ScrollView>

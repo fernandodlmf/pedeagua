@@ -1,0 +1,248 @@
+<ScrollView 
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        	<RelativeLayout
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:background="#FFFFFF"
+				 android:fontFamily="open-sans">
+			 
+		    <RelativeLayout
+		        android:id="@+id/layoutHrConfirmar"
+		        android:layout_width="match_parent"
+		        android:layout_height="100dp"
+		        android:orientation="horizontal" >
+		        <TextView
+		            android:id="@+id/textView3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginTop="-6dp"
+		            android:fontFamily="open-sans"
+		            android:text="COMPRA"
+		            android:layout_below="@+id/tvQtdGlobal"
+		            android:textColor="#666666"
+		            android:textSize="12pt"
+		            android:textStyle="bold" />
+		        
+		
+		        <TextView
+		            android:id="@+id/tvFecharActivity"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="10dp"
+		            android:clickable="true"
+		            android:onClick="tvFechar"
+		            android:text="@string/fechar"
+		            android:textColor="#000000"
+		            android:textSize="15pt"
+		            android:textStyle="bold" />
+		
+		        <TextView
+		            android:id="@+id/tvQtdGlobal"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_centerHorizontal="true"
+		            android:layout_marginTop="18dp"
+		            android:fontFamily="open-sans"
+		            android:text="@string/confirmar"
+		            android:textColor="#666666"
+		            android:textSize="12pt"
+		            android:textStyle="bold" />
+		
+		        <ImageView
+		            android:id="@+id/imageView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="68dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignTop="@+id/tvQtdGlobal"
+		            android:src="@drawable/gota" />
+		
+		    </RelativeLayout>
+		    
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_below="@+id/layoutHrConfirmar" >
+		        
+		         <LinearLayout
+		             android:id="@+id/layout_Total"
+		             android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginTop="15dp"
+		             android:orientation="vertical" >
+				    
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="1dp"			    
+						   android:background="#A9A9A9"/>
+		             	
+		             	<RelativeLayout
+		             	    android:layout_width="match_parent"
+		             		android:layout_height="wrap_content"
+		             		android:orientation="horizontal" >
+		             	
+		             	<TextView
+		             	    android:id="@+id/tvTotalIndividualGas"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:padding="10dp"
+		             	    android:fontFamily="open-sans"
+		             	    android:text="TOTAL"
+		             	    android:textColor="#666666"
+		             	    android:textSize="10pt" />
+		
+		             	<TextView
+		             	    android:id="@+id/tvQtdGlobalConfirmarConta"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:paddingTop="5dp"
+		             	    android:paddingBottom="5dp"
+		             	    android:paddingLeft="10dp"
+		             	    android:gravity="center"
+		             	    android:paddingRight="5dp"
+		             	    android:text="0"
+		             	    android:textSize="10pt"
+		             	    android:fontFamily="open-sans"
+		             	    android:layout_marginRight="25dp"
+		             	    android:textColor="#666666"
+		             	    android:layout_alignParentRight="true"
+		             	    android:layout_centerVertical="true"/>
+		
+		             	<TextView
+		             	    android:id="@+id/tvValorGlobalConfirmarConta"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:layout_centerVertical="true"
+		             	    android:layout_toLeftOf="@+id/tvQtdGlobalConfirmarConta"
+		             	    android:paddingLeft="15dp"
+		             	    android:paddingTop="6dp"
+		             	    android:paddingBottom="6dp"
+		
+		             	    android:paddingRight="15dp"
+		             	    android:background="@drawable/fundo_total"
+		             	    android:fontFamily="open-sans"
+		             	    android:gravity="center"
+		             	    android:text="00,00"
+		             	    android:textColor="#666666"
+		             	    android:textSize="9pt" />
+		             	
+		             	</RelativeLayout>
+		             	
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="1dp"			    
+						   android:background="#A9A9A9"/>
+		             
+		         </LinearLayout>
+		         
+		         
+		         <LinearLayout
+		             android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginTop="50dp"
+		             android:orientation="vertical"  >
+				    
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="1dp"			    
+						   android:background="#A9A9A9"/>
+		             	
+		             	<RelativeLayout
+		             	    android:layout_width="match_parent"
+		             		android:layout_height="wrap_content"
+		             		android:orientation="horizontal" >
+		             	
+		             	
+		             	<TextView
+		             	    android:id="@+id/tvTotalIndividualGas"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:padding="10dp"
+		             	    android:fontFamily="open-sans"
+		             	    android:text="TROCO PARA R$"
+		             	    android:textColor="#666666"
+		             	    android:textSize="10pt" />
+		
+		             	<TextView
+		             	    android:id="@+id/tvTrocoPara"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:layout_centerVertical="true"
+		             	    android:paddingTop="5dp"
+		             	    android:paddingBottom="5dp"
+		             	    android:paddingRight="8dp"
+		             	    android:paddingLeft="5dp"
+		             	    android:layout_marginRight="10dp"
+		             	    android:background="@drawable/fundo_troco"
+		             	    android:layout_alignParentRight="true"          	    
+		             	    android:fontFamily="open-sans"
+		             	    android:hint="00,00"
+		             	    android:gravity="center"
+		             	    android:textColor="#666666"
+		             	    android:textSize="9pt" />
+		             	
+		             	</RelativeLayout>
+		             	
+		             	
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="1dp"			    
+						   android:background="#A9A9A9"/>
+		             
+		         </LinearLayout>
+		         
+		         
+		         
+		         
+		         
+		         
+		 
+		   
+		
+			
+				        
+			     <LinearLayout
+			        android:id="@+id/layout_Termos"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="20dp" >
+			
+			        <Button
+			            android:id="@+id/btConfirmar_Compra"
+			            android:layout_width="match_parent"
+			            android:layout_height="55dp"
+			            android:background="@drawable/btn_confirmar_compra"
+			            android:clickable="true"
+			            android:fontFamily="open-sans"
+			            android:text="@string/confirmar"
+			            android:textColor="#FFFFFF"
+			            android:textSize="10pt"
+			            android:textStyle="bold" />
+			
+			     </LinearLayout>
+	     
+	     </LinearLayout>
+	    
+	 
+
+</RelativeLayout>
+	
+        
+    </LinearLayout>
+
+</ScrollView>

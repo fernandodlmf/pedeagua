@@ -1,0 +1,72 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#FFFFFF" >
+    
+    <ListView
+        android:id="@+id/listProdutos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutMinhaConta"
+        android:listSelector="@drawable/list_produto_agua_selector"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        android:layout_marginTop="10dp" >
+    </ListView>
+    
+
+    
+    
+     <RelativeLayout
+         android:id="@+id/layoutMinhaConta"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:clickable="true"
+         android:onClick="minhaConta"
+         android:background="@drawable/btn_minha_conta" >
+
+         <TextView
+             android:id="@+id/tvMinhaConta"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+             android:fontFamily="open-sans"
+             android:text="MINHA CONTA"
+             android:textColor="#666666"
+             android:textSize="8pt" />
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="74dp"
+             android:layout_marginTop="1.5dp"
+             android:text="R$ 99,99"
+             android:textSize="8pt" />
+
+         <TextView
+             android:id="@+id/tvQtdGlobal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_below="@+id/textView3"
+             android:layout_marginRight="19dp"
+             android:layout_marginTop="12dp"
+             android:fontFamily="open-sans"
+             android:text="99"
+             android:textSize="9pt" />
+
+    </RelativeLayout>
+    
+    </RelativeLayout>
+
+    
+
+

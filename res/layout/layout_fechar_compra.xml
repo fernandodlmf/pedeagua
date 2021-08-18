@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+   <LinearLayout
+        android:id="@+id/layout_fecharCompra_produtos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/Linear2" >
+        
+         <LinearLayout
+             android:id="@+id/layout_Total"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="15dp"
+             android:orientation="vertical" >
+		    
+             	<View 
+				   android:layout_width="match_parent"
+				   android:layout_height="0.5dp"			    
+				   android:background="#A9A9A9"/>
+             	
+             	<RelativeLayout
+             	    android:layout_width="match_parent"
+             		android:layout_height="wrap_content"
+             		android:orientation="horizontal" >
+             	
+             	<TextView
+             	    android:id="@+id/tvTotalIndividualGas"
+             	    android:layout_width="wrap_content"
+             	    android:layout_height="wrap_content"
+             	    android:paddingTop="8dp"
+             	    android:paddingBottom="8dp"
+             	    android:paddingLeft="10dp"
+             	    android:fontFamily="open-sans"
+             	    android:layout_centerVertical="true"
+             	    android:text="TOTAL"
+             	    android:textColor="#666666"
+             	    android:textSize="9pt" />
+
+             	<TextView
+             	    android:id="@+id/tvQtdGlobalFecharConta"
+             	    android:layout_width="wrap_content"
+             	    android:layout_height="wrap_content"
+             	    android:layout_marginRight="20dp"
+             	    android:paddingLeft="5dp"
+             	    android:paddingRight="5dp"
+             	    android:layout_alignParentRight="true"
+             	    android:text="0"
+             	    android:textSize="10pt"
+             	    android:gravity="center"
+             	    android:fontFamily="open-sans"
+             	    android:textColor="#666666"
+             	    android:layout_centerVertical="true"/>
+
+             	<TextView
+             	    android:id="@+id/tvValorGlobalFecharConta"
+             	    android:layout_width="wrap_content"
+             	    android:layout_height="wrap_content"
+             	    android:layout_centerVertical="true"
+             	    android:layout_toLeftOf="@+id/tvQtdGlobalFecharConta"
+             	    android:background="@drawable/fundo_total"
+             	    android:fontFamily="open-sans"
+             	    android:gravity="center"
+             	    android:paddingBottom="4dp"
+             	    android:paddingTop="4dp"
+             	    android:text="R$ 00,00"
+             	    android:textColor="#666666"
+             	    android:textSize="9pt" />
+             	
+             	</RelativeLayout>
+             	
+             	
+             
+         </LinearLayout>
+         
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/layout_Total"
+             android:orientation="vertical"  >
+		    
+             	<View 
+				   android:layout_width="match_parent"
+				   android:layout_height="0.5dp"			    
+				   android:background="#A9A9A9"/>
+             	
+             	<RelativeLayout
+             	    android:layout_width="match_parent"
+             		android:layout_height="wrap_content"
+             		android:orientation="horizontal" >
+             	
+             	
+             	<TextView
+             	    android:id="@+id/tvTotalIndividualGas"
+             	    android:layout_width="wrap_content"
+             	    android:layout_height="wrap_content"
+             	    android:padding="10dp"
+             	    android:fontFamily="open-sans"
+             	    android:text="TROCO PARA R$"
+             	    android:textColor="#666666"
+             	    android:textSize="9pt" />
+
+             	<EditText
+             	    android:id="@+id/etTrocoPara"
+             	    android:layout_width="wrap_content"
+             	    android:layout_height="wrap_content"
+             	    android:layout_toRightOf="@+id/tvTotalIndividualGas"
+             	    android:layout_centerVertical="true"
+             	    android:paddingTop="4dp"
+             	    android:paddingBottom="4dp"
+             	    android:paddingRight="6dp"
+             	    android:paddingLeft="6dp"
+             	    android:background="@drawable/fundo_troco"
+             	    android:fontFamily="open-sans"
+             	    android:hint="00,00"
+             	    android:inputType="number"
+             	    android:gravity="center"
+             	    android:textColor="#666666"
+             	    android:textSize="10pt"/>
+             	
+             	
+             	</RelativeLayout>
+             	
+             	
+             	             
+         </LinearLayout>
+         
+         
+         
+         
+         
+         
+ 
+   
+
+	
+		        
+	   
+	     
+	     </LinearLayout>
+    
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/Linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_MinhaConta_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:background="@drawable/btn_minha_conta_2"
+            android:text="MINHA CONTA"
+            android:textColor="#666666"
+            android:fontFamily="open-sans" />
+
+        <Button
+            android:id="@+id/bt_FecharConta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:background="@drawable/btn_fechar_compra"
+            android:text="FECHAR CONTA"
+            android:fontFamily="open-sans"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvFecharCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_fecharCompra_produtos"
+        android:layout_alignParentLeft="true" >
+
+    </ListView>
+
+</RelativeLayout>

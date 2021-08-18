@@ -1,0 +1,148 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#FFFFFF" >
+<ScrollView
+   
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    
+    <LinearLayout 
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	    <LinearLayout
+	        android:id="@+id/Linear1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical"
+	        android:paddingLeft="@dimen/activity_horizontal_margin"
+	        android:paddingRight="@dimen/activity_horizontal_margin" >
+	        
+	        <ImageView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/logo"
+	        android:layout_gravity="center|center_vertical"
+	        android:layout_marginTop="0dp" />
+	
+	        <EditText
+	            android:id="@+id/etNome"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center|center_vertical"
+	            android:hint="Email"
+	            android:drawableLeft="@drawable/person"
+	            android:paddingLeft="6dp"
+	            android:paddingBottom="6dp"
+	            android:textColor="#666666"
+	            android:inputType="textEmailAddress" >
+	
+	           <!--   <requestFocus /> -->
+	        </EditText>
+	
+	        <EditText
+	            android:id="@+id/etSenha"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center|center_vertical"
+	            android:layout_marginTop="10dp"
+	            android:drawableLeft="@drawable/cadeado"
+	            android:paddingLeft="6dp"
+	            android:paddingBottom="6dp"
+	            android:hint="Senha"
+	            android:textColor="#666666"
+	            android:fontFamily="open-sans"
+	            android:inputType="textPassword" />
+	
+	    </LinearLayout>
+	    
+	
+	    <LinearLayout
+	        android:id="@+id/Linear2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/Linear1"
+	        android:layout_marginTop="14dp"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="horizontal"
+	        android:paddingLeft="@dimen/activity_horizontal_margin"
+	    	android:paddingRight="@dimen/activity_horizontal_margin" >
+	
+	        <Button
+	            android:id="@+id/btCadastrar_1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="48dp"
+	            android:layout_weight="0.19"
+	            android:background="@drawable/btn_cadastrar"
+	            android:text="CADASTRAR"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold"
+	            android:fontFamily="open-sans" />
+	
+	        <Button
+	            android:id="@+id/btEntrar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_weight="0.20"
+	            android:background="@drawable/btn_entrar"
+	            android:text="ENTRAR"
+	            android:fontFamily="open-sans"
+	            android:textColor="#FFFFFF"
+	            android:textStyle="bold" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/Linearfacebook"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/Linear2"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="30dp"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center|center_vertical"
+	            android:text="@string/dados_esquecidos"
+	            android:clickable="true"
+	            android:textColor="#ff0000"
+	            android:onClick="recuperarSenha" >
+	        </TextView>
+	
+	        <Button
+	            android:id="@+id/bt_facebook"
+	            android:layout_width="fill_parent"
+	            android:layout_height="80px"
+	            android:layout_gravity="center"
+	            android:layout_marginTop="30dp"
+	            android:layout_weight="0.66"
+	            android:background="@drawable/btn_facebook"
+	            android:text="Login usando facebook"
+	            android:textSize="6pt"
+	            android:textColor="#FFFFFF"
+	            android:fontFamily="open-sans"
+	            android:textStyle="bold"
+	            android:onClick="loginFacebook" />
+	    </LinearLayout>
+	    
+    </LinearLayout>
+    
+</ScrollView>
+
+</LinearLayout>
+    
+    
+
+

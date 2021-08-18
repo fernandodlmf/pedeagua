@@ -1,0 +1,51 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_produto_agua_selector" >
+
+    <TextView
+        android:id="@+id/tvProdutoAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#666666"
+        android:textSize="11pt"
+        android:fontFamily="open-sans" />
+
+    <TextView
+        android:id="@+id/tvQtdIndividualAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+		android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="open-sans"
+        android:background="@drawable/fundo_qtd_list"
+        android:text="0"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/tvTotalIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/tvQtdIndividualAgua"
+        android:background="@drawable/fundo_preco"
+        android:fontFamily="open-sans"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:text="R$ 00,00"
+        android:textSize="8pt" />
+
+    </RelativeLayout>
+
+    
+
+

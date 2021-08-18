@@ -1,0 +1,197 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+		        	
+        	<RelativeLayout
+				 android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:background="#FFFFFF"
+				 android:fontFamily="open-sans">
+			 
+			    <RelativeLayout
+			        android:id="@+id/layoutHrConfirmar"
+			        android:layout_width="match_parent"
+			        android:layout_height="90dp"
+			        android:orientation="horizontal" >
+			        
+			
+			        <TextView
+			            android:id="@+id/tvFecharActivity"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_marginRight="10dp"
+			            android:clickable="true"
+			            android:onClick="tvFechar"
+			            android:text="@string/fechar"
+			            android:textColor="#000000"
+			            android:textSize="15pt"
+			            android:textStyle="bold" />
+			
+			        <ImageView
+			            android:id="@+id/imageView1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="68dp"
+			            android:layout_marginTop="15dp"
+			            android:layout_alignParentLeft="true"
+			            android:src="@drawable/gota" />
+			
+			        <TextView
+			            android:id="@+id/tvQtdGlobal"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/tvFecharActivity"
+			            android:layout_centerHorizontal="true"
+			            android:paddingLeft="10dp"
+			            android:layout_marginTop="-10dp"
+			            android:fontFamily="open-sans"
+			            android:text="QUALIFICAÇÃO"
+			            android:textColor="#666666"
+			            android:textSize="12pt"
+			            android:textStyle="bold" />
+			
+			    </RelativeLayout>
+			    
+			    
+			    <RelativeLayout
+			    android:id="@+id/LayoutDadosVendedor_qua"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/list_linha_selector"
+			    android:descendantFocusability="blocksDescendants"
+			    android:layout_below="@+id/layoutHrConfirmar"
+			    android:padding="8dp" >
+			 
+				    <!-- Imagem do Vendedor  -->
+				    <com.pedeagua.vendedores.CircularNetworkImageView
+				        android:id="@+id/thumbnail_ven_qua"
+				        android:layout_width="80dp"
+				        android:layout_height="80dp"
+				        android:layout_alignParentLeft="true"
+				        android:layout_marginRight="8dp" />
+				 
+				    
+				    <!-- Nome do vendedor -->
+				      <TextView
+				        android:id="@+id/title_ven_qua"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignTop="@+id/thumbnail_ven_qua"
+				        android:layout_toRightOf="@+id/thumbnail_ven_qua"
+				        android:textSize="@dimen/title"
+				        android:layout_marginTop="12dp"
+				        android:textStyle="bold" />
+				 
+				    <!-- Bairro do Vendedor -->
+				    <TextView
+				        android:id="@+id/rating_ven_qua"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_below="@id/title_ven_qua"
+				        android:layout_marginTop="1dip"
+				        android:layout_toRightOf="@+id/thumbnail_ven_qua"
+				        android:textSize="@dimen/rating" />
+			 
+			</RelativeLayout>
+			    
+			    
+			    
+			    
+			    
+			    
+			    
+			    
+			    
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_below="@+id/LayoutDadosVendedor_qua" >
+		        
+		         <LinearLayout
+		             android:id="@+id/layout_Total"
+		             android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginTop="5dp"
+		             android:orientation="vertical" >
+				    
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="0.5dp"			    
+						   android:background="#A9A9A9"/>
+		             	
+		             	<RelativeLayout
+		             	    android:layout_width="match_parent"
+		             		android:layout_height="wrap_content"
+		             		android:orientation="horizontal" >
+		
+		             	
+		             	
+		             	
+		             	</RelativeLayout>
+		             	
+		             	<TextView
+		             	    android:id="@+id/tvTotalIndividualGas"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:layout_gravity="center_horizontal"
+		             	    android:padding="10dp"
+		             	    android:fontFamily="open-sans"
+		             	    android:text="@string/grau_qualificacao"
+		             	    android:textColor="#666666"
+		             	    android:textStyle=""
+		             	    android:textSize="8pt" />
+		
+		             	<RatingBar
+		             	    android:id="@+id/ratingBar1"
+		             	    style="@style/vendedorRatingFinal"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:layout_gravity="center_horizontal"
+		             	    android:layout_marginBottom="5dp"
+		             	    android:layout_marginTop="5dp"/>
+		             
+		         </LinearLayout>
+		         
+
+				        
+			     <LinearLayout
+			        android:id="@+id/layout_Termos"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentBottom="true"
+			        android:layout_marginTop="20dp" >
+			
+			        <Button
+			            android:id="@+id/btConfirmar_Qualificacao"
+			            android:layout_width="match_parent"
+			            android:layout_height="55dp"
+			            android:background="@drawable/btn_confirmar_compra"
+			            android:clickable="true"
+			            android:fontFamily="open-sans"
+			            android:text="@string/confirmar"
+			            android:textColor="#FFFFFF"
+			            android:textSize="10pt"
+			            android:textStyle="bold" />
+			
+			     </LinearLayout>
+			     
+			     </LinearLayout>
+			    
+			 
+		
+		</RelativeLayout>
+	
+        
+    </LinearLayout>
+
+</ScrollView>

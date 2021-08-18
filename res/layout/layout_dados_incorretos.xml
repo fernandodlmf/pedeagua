@@ -1,0 +1,45 @@
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:layout_width="match_parent"
+	 android:layout_height="wrap_content"
+	 android:minWidth="1000dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:minWidth="1000dp" 
+        android:background="@drawable/dados_incorretos">
+
+        <TextView
+            android:id="@+id/tvTotalIndividualGas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="open-sans"
+            android:text="EMAIL OU SENHA INCORRETA!"
+            android:textColor="#FFFFFF"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvQtdGlobal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTotalIndividualGas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="open-sans"
+            android:text="TENTE NOVAMENTE"
+            android:textColor="#FFFFFF"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+	

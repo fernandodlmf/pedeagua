@@ -1,0 +1,282 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+		    <RelativeLayout
+			     android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:background="#FFFFFF"
+				 android:fontFamily="open-sans">
+			 
+		    <RelativeLayout
+		        android:id="@+id/layoutHrConfirmar"
+		        android:layout_width="match_parent"
+		        android:layout_height="90dp"
+		        android:orientation="horizontal" >
+		        <TextView
+		            android:id="@+id/textView3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginTop="-6dp"
+		            android:fontFamily="open-sans"
+		            android:text="CHEGAR"
+		            android:layout_below="@+id/tvQtdGlobal"
+		            android:textColor="#666666"
+		            android:textSize="12pt"
+		            android:textStyle="bold" />
+		
+		        <TextView
+		            android:id="@+id/tvQtdGlobal"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_centerHorizontal="true"
+		            android:layout_marginTop="20dp"
+		            android:fontFamily="open-sans"
+		            android:text="AGUARDANDO"
+		            android:textColor="#666666"
+		            android:textSize="12pt"
+		            android:textStyle="bold" />
+		
+		        <ImageView
+		            android:id="@+id/imageView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="68dp"
+		            android:layout_alignParentLeft="true"
+		            android:layout_alignTop="@+id/tvQtdGlobal"
+		            android:src="@drawable/gota" />
+		
+		    </RelativeLayout>
+		    
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:layout_below="@+id/layoutHrConfirmar" >
+		        
+		         <LinearLayout
+		             android:id="@+id/layout_Total"
+		             android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginTop="25dp"
+		             android:orientation="vertical" >
+				    
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="1dp"			    
+						   android:background="#A9A9A9"/>
+		             	
+		             	<RelativeLayout
+		             	    android:layout_width="match_parent"
+		             		android:layout_height="wrap_content"
+		             		android:orientation="horizontal" >
+		             	
+		             	<TextView
+		             	    android:id="@+id/tvTotalIndividualGas"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:padding="12dp"
+		             	    android:fontFamily="open-sans"
+		             	    android:text="TOTAL"
+		             	    android:textColor="#666666"
+		             	    android:textSize="10pt" />
+		
+		             	<TextView
+		             	    android:id="@+id/tvQtdGlobalAguardandoChegar"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:paddingTop="5dp"
+		             	    android:paddingBottom="5dp"
+		             	    android:paddingLeft="10dp"
+		             	    android:gravity="center"
+		             	    android:paddingRight="5dp"
+		             	    android:text="0"
+		             	    android:textSize="10pt"
+		             	    android:fontFamily="open-sans"
+		             	    android:layout_marginRight="25dp"
+		             	    android:textColor="#666666"
+		             	    android:layout_alignParentRight="true"
+		             	    android:layout_centerVertical="true"/>
+		
+		             	<TextView
+		             	    android:id="@+id/tvValorTotalAguardandoChegar"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:layout_centerVertical="true"
+		             	    android:layout_toLeftOf="@+id/tvQtdGlobalAguardandoChegar"
+		             	    android:paddingLeft="15dp"
+		             	    android:paddingTop="8dp"
+		             	    android:paddingBottom="8dp"
+		
+		             	    android:paddingRight="15dp"
+		             	    android:background="@drawable/fundo_total"
+		             	    android:fontFamily="open-sans"
+		             	    android:gravity="center"
+		             	    android:text="R$ 00,00"
+		             	    android:textColor="#666666"
+		             	    android:textSize="9pt" />
+		             	
+		             	</RelativeLayout>
+		             	
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="1dp"			    
+						   android:background="#A9A9A9"/>
+		             
+		         </LinearLayout>
+		         
+		         
+		         <LinearLayout
+		             android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:orientation="vertical"  >
+				    
+		             	
+		             	<RelativeLayout
+		             	    android:layout_width="match_parent"
+		             		android:layout_height="wrap_content"
+		             		android:orientation="horizontal" >
+		             	
+		             	
+		             	<TextView
+		             	    android:id="@+id/tvTotalIndividualGas"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:padding="10dp"
+		             	    android:fontFamily="open-sans"
+		             	    android:text="TROCO PARA R$"
+		             	    android:textColor="#666666"
+		             	    android:textSize="10pt" />
+		
+		             	<TextView
+		             	    android:id="@+id/tvTrocoAguardandoChegar"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:layout_centerVertical="true"
+		             	    android:paddingTop="5dp"
+		             	    android:paddingBottom="5dp"
+		             	    android:paddingRight="8dp"
+		             	    android:paddingLeft="5dp"
+		             	    android:layout_marginRight="10dp"
+		             	    android:background="@drawable/fundo_troco"
+		             	    android:layout_alignParentRight="true"          	    
+		             	    android:fontFamily="open-sans"
+		             	    android:hint="00,00"
+		             	    android:gravity="center"
+		             	    android:textColor="#666666"
+		             	    android:textSize="9pt" />
+		             	
+		             	</RelativeLayout>
+		             	
+		             	
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="1dp"			    
+						   android:background="#A9A9A9"/>
+		             
+		         </LinearLayout>
+		         
+		         
+		         
+		         
+		         
+		         <RelativeLayout
+		             android:id="@+id/llCronometro"
+		             android:layout_width="match_parent"
+		             android:layout_height="wrap_content"
+		             android:layout_marginTop="20dp"
+		             android:orientation="vertical"
+		             android:background="@drawable/fundo_cronometro" 
+		             android:clickable="true"
+		             android:onClick="cancelarPedido" >
+				    
+		             	<View 
+						   android:layout_width="match_parent"
+						   android:layout_height="1dp"			    
+						   android:background="#A9A9A9"/>
+		             	
+		             	<RelativeLayout
+		             	    android:layout_width="match_parent"
+		             		android:layout_height="wrap_content"
+		             		android:orientation="horizontal" >
+		             	
+		             	</RelativeLayout>
+		
+		             	<TextView
+		             	    android:id="@+id/textView15"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:layout_alignParentRight="true"
+		             	    android:layout_centerVertical="true"
+		             	    android:layout_marginRight="10dp"
+		             	    android:text="CANCELAR"
+		             	    android:gravity="center"
+		             	    android:textColor="#FFFFFF"
+		             	    android:textSize="9pt"
+		             	    android:textStyle="bold" />
+		
+		             	<Chronometer
+		             	    android:id="@+id/chronometer"
+		             	    android:layout_width="wrap_content"
+		             	    android:layout_height="wrap_content"
+		             	    android:layout_alignParentLeft="true"
+		             	    android:textColor="#FFFFFF"
+		             	    android:layout_centerVertical="true"
+		             	    android:layout_marginLeft="20dp"
+		             	    android:format="00:00:00"
+		             	    android:textSize="15pt"
+		             	    android:text="Chronometer" />
+		             
+		         </RelativeLayout>
+		         
+		         
+		         
+		         
+		         
+		 
+		   
+		
+			
+				        
+			     <LinearLayout
+			        android:id="@+id/layout_Termos"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentBottom="true"
+			        android:layout_marginTop="20dp" >
+			
+			        <Button
+			            android:id="@+id/bt_Entregue"
+			            android:layout_width="match_parent"
+			            android:layout_height="55dp"
+			            android:background="@drawable/btn_confirmar_cadastro"
+			            android:clickable="true"
+			            android:fontFamily="open-sans"
+			            android:text="ENTREGUE"
+			            android:textColor="#FFFFFF"
+			            android:textSize="10pt"
+			            android:textStyle="bold" />
+			
+			     </LinearLayout>
+			     
+			     </LinearLayout>
+			    
+			 
+		
+		</RelativeLayout>
+			
+        
+    </LinearLayout>
+
+</ScrollView>

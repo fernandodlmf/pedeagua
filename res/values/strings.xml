@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pede Água</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cadastro"><u>Ainda não tenho <b>cadastro</b></u>.</string>
+    <string name="termos">TERMOS DE USO</string>
+    <string name="indaia"><p>Desde a captação até seu envasamento, a Indaiá é totalmente livre do contato humano, o que garante uma água mineral direto da natureza para você.</p></string>
+   
+     
+    
+    <string name="title_activity_activity1">Activity1</string>
+    <string name="title_activity_activity2">Activity2</string>
+    <string name="title_activity_activity3">Activity3</string>
+    <string name="title_activity_activity4">Activity4</string>
+    <string name="title_activity_navigator">NavigatorActivity</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="dados_esquecidos"><ul>Esqueci minha senha</ul></string>
+    <string name="fechar">X</string>
+    <string name="confirmar">CONFIRMAR</string>
+    <string name="grau_qualificacao">Qual seu grau de qualificação?</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="li_termos">Li e aceito os termos.</string>
+    
+    
+    <!-- Strings do Drawer -->
+    	
+	<string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    
+    <!-- ID DO FACEBOOK -->
+    
+    <string name="facebook_id">1593597007560578</string>
+
+
+</resources>
